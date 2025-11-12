@@ -12,10 +12,9 @@ import './design/reset.scss';
 import './design/design.scss';
 
 const App = () => {
-
   return (
     <>
-      <HeaderNav title="Jared's Portfolio" />
+      <HeaderNav />
       <main>
         <Intro name="JARED PATTISON" description={['FULL-STACK', 'JAVASCRIPT', 'DEVELOPER']}/>
         <BulletContent />
@@ -25,12 +24,10 @@ const App = () => {
         <About name="JARED"/>
       </main>
       <Footer>
-        <div>&copy; 2019 JP</div>
+        <div>&copy; {new Date().getFullYear()} JP</div>
       </Footer>
     </>
   );
-  
 };
-
 
 export default App;
