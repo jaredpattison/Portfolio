@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const AboutParagraph = props => {
 
@@ -6,8 +6,8 @@ const AboutParagraph = props => {
     <p>
       {props.content.paragraph}
     </p>
-  )
+  );
   
-}
+};
 
 export default AboutParagraph;

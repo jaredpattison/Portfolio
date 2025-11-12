@@ -15,18 +15,18 @@ const App = () => {
 
   return (
     <>
-       <HeaderNav title="Jared's Portfolio" />
-       <main>
-         <Intro name="JARED PATTISON" description={['FULL-STACK', 'JAVASCRIPT', 'DEVELOPER']}/>
-         <BulletContent />
-         <Parallax bg={imageOne} tag="Projects" />
-         <Projects />
-         <Parallax bg={imageTwo} tag="About Me" />
-         <About name="JARED"/>
-       </main>
-       <Footer>
-         <div>&copy; 2019 JP</div>
-       </Footer>
+      <HeaderNav title="Jared's Portfolio" />
+      <main>
+        <Intro name="JARED PATTISON" description={['FULL-STACK', 'JAVASCRIPT', 'DEVELOPER']}/>
+        <BulletContent />
+        <Parallax bg={imageOne} tag="Projects" />
+        <Projects />
+        <Parallax bg={imageTwo} tag="About Me" />
+        <About name="JARED"/>
+      </main>
+      <Footer>
+        <div>&copy; 2019 JP</div>
+      </Footer>
     </>
   );
   

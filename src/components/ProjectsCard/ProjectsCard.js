@@ -3,6 +3,20 @@ import Modal from 'react-modal';
 import github from '../../assets/github.svg';
 import world from '../../assets/www.png';
 
+// Import all project images
+import packingPlanner from '../../assets/packing-planner.png';
+import oneBar from '../../assets/one-bar.png';
+import cfQuickStart from '../../assets/cf-quick-start.png';
+import buzzcard from '../../assets/buzzcard.png';
+
+// Image map for dynamic lookup
+const imageMap = {
+  'packing-planner.png': packingPlanner,
+  'one-bar.png': oneBar,
+  'cf-quick-start.png': cfQuickStart,
+  'buzzcard.png': buzzcard,
+};
+
 class ProjectsCard extends React.Component {
 
   constructor (props) {
@@ -24,11 +38,10 @@ class ProjectsCard extends React.Component {
   }
     
   render() {
-      
-    const imgUrl = require(`../../assets/${this.props.projects.media.title}`);
+    
+    const imgUrl = imageMap[this.props.projects.media.title];
     return (
-        
-        <>
+      <>
         <div className="projects-card">
 
           <figure>
@@ -63,8 +76,12 @@ class ProjectsCard extends React.Component {
 
             <div id="social-icons">
               <button className="social" onClick={this.handleCloseModal}>X</button>
-              <a  target="_blank" rel="noopener noreferrer" href={this.props.projects.links[1].href}><img alt="" className="social" src={github}/></a>
-              <a target="_blank" rel="noopener noreferrer" href={this.props.projects.links[0].href}><img alt=''  className="social" src={world} /></a>
+              {this.props.projects.links[1].href && (
+                <a  target="_blank" rel="noopener noreferrer" href={this.props.projects.links[1].href}><img alt="" className="social" src={github}/></a>
+              )}
+              {this.props.projects.links[0].href && (
+                <a target="_blank" rel="noopener noreferrer" href={this.props.projects.links[0].href}><img alt=''  className="social" src={world} /></a>
+              )}
             </div>
           </div>
 
@@ -75,7 +92,7 @@ class ProjectsCard extends React.Component {
           </div>
 
         </Modal>
-        </>
+      </>
     );
   }
   

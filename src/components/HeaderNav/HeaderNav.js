@@ -12,13 +12,13 @@ const HeaderNav = () => {
 
           <ul id="menu">
             <li>
-              <AnchorLink offset={() => calcedOffset} href="#intro">HOME</AnchorLink>
+              <AnchorLink offset={calcedOffset} href="#intro">HOME</AnchorLink>
             </li>
             <li>
-              <AnchorLink offset={() => calcedOffset} href="#projects">PROJECTS</AnchorLink>
+              <AnchorLink offset={calcedOffset} href="#projects">PROJECTS</AnchorLink>
             </li>
             <li>
-              <AnchorLink offset={() => calcedOffset} href="#about">ABOUT ME</AnchorLink>
+              <AnchorLink offset={calcedOffset} href="#about">ABOUT ME</AnchorLink>
             </li>
             <li>
               <a target="_blank" href="JaredPattisonResume.pdf">RESUME</a>

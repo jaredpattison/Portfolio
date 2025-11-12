@@ -1,5 +1,5 @@
 @import "./lib/_mixins.scss";
-@import "./lib/_variables";
+@import "./lib/_variables.scss";
 @import "./core/_base.scss";
 @import "./core/_nav.scss";
 @import "./core/_intro.scss";
@@ -7,7 +7,7 @@
 @import "./core/_projects.scss";
 @import "./core/_modal.scss";
 @import "./core/_about.scss";
-@import "./core/parallax";
+@import "./core/_parallax.scss";
 @import "./core/_footer.scss";
 @import "./core/_header-nav.scss";
 @import "./core/_main.scss";
