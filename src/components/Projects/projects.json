@@ -34,8 +34,8 @@
         "links": [
           {
             "type": "primary",
-            "title": "Website",
-            "href": "http://www.one-bar.info/"
+            "title": "",
+            "href": ""
           },
           {
             "type": "secodary",
@@ -76,8 +76,8 @@
         "links": [
           {
             "type": "primary",
-            "title": "Website",
-            "href": "https://play.google.com/store/apps/details?id=com.jaredpattison.BUZZCARD&hl=en_US"
+            "title": "",
+            "href": ""
           },
           {
             "type": "secodary",
