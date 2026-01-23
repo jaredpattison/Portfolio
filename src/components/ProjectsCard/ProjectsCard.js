@@ -28,7 +28,7 @@ const ProjectsCard = ({ projects }) => {
     setShowModal(false);
   };
 
-  const imgUrl = imageMap[projects.media.title] || packingPlanner;
+  const imgUrl = imageMap[projects.media.title] || projects.media.href || packingPlanner;
 
   return (
     <>

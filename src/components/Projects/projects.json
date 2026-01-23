@@ -3,6 +3,27 @@
     "title": "Jared's Projects",
     "records": [
       {
+        "title": "Developer Tools",
+        "copy": "A web application for encoding, decoding, and formatting various data formats with real-time updates. Features include Base64 encoder/decoder with UTF-8 support, JSON formatter/minifier with YAML and XML conversion, and JWT decoder/encoder with signature verification. All tools work in real-time with no data stored on servers.\n\nBuilt with Cursor using AI coding agents for rapid development and iteration. Deployed via GitHub Actions CI/CD pipeline to AWS S3 with CloudFront CDN for global content delivery.\n\nTechnologies used: React, TypeScript, Vite, Tailwind CSS, Vitest, Playwright, GitHub Actions, AWS S3, AWS CloudFront",
+        "media": {
+          "alt": "Developer Tools - Base64, JSON, and JWT utilities",
+          "title": "og-image.png",
+          "href": "https://base-64.online/og-image.png"
+        },
+        "links": [
+          {
+            "type": "primary",
+            "title": "Live Site",
+            "href": "https://base-64.online"
+          },
+          {
+            "type": "secondary",
+            "title": "",
+            "href": ""
+          }
+        ]
+      },
+      {
         "title": "Packing Planner",
         "copy": "Packing Planner provides a pre-populated, customizable, packing checklist based the climate the user will be travelling to and the activities he expects to participate in. The final checklist is saved to the browsers local storage and is retrieved when opened.\nTechnologies used: JavaScript, CSS, JSON, arrays, local storage",
         "media": {
