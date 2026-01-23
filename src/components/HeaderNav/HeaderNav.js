@@ -24,7 +24,7 @@ const HeaderNav = () => {
               <AnchorLink offset={calcedOffset} href="#about">ABOUT ME</AnchorLink>
             </li>
             <li>
-              <a target="_blank" rel="noopener noreferrer" href="JaredPattisonResume-v2.pdf">RESUME</a>
+              <a target="_blank" rel="noopener noreferrer" href="JaredPattisonResume.pdf">RESUME</a>
             </li>
           </ul>
         </div>
