@@ -94,6 +94,27 @@
     text-transform: uppercase;
   }
 
+  .project-highlights {
+    display: grid;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+
+    li {
+      font: 0.95rem/1.4rem $raleway;
+      padding-left: 1rem;
+      position: relative;
+
+      &::before {
+        color: $bleed;
+        content: '•';
+        left: 0;
+        position: absolute;
+      }
+    }
+  }
+
   .project-tags {
     display: flex;
     flex-wrap: wrap;

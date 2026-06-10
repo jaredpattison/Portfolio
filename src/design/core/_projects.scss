@@ -32,7 +32,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    min-height: 22rem;
+    min-height: 24rem;
     overflow: hidden;
     position: relative;
     transition: transform 160ms ease, box-shadow 160ms ease;
@@ -88,6 +88,28 @@
       line-height: 1.45;
     }
 
+    .project-highlights {
+      display: grid;
+      gap: 0.45rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        font-size: 0.9rem;
+        line-height: 1.35;
+        padding-left: 1rem;
+        position: relative;
+
+        &::before {
+          color: $bleed;
+          content: '•';
+          left: 0;
+          position: absolute;
+        }
+      }
+    }
+
     .project-tags {
       display: flex;
       flex-wrap: wrap;
@@ -127,23 +149,28 @@
 
   .featured-card.theme-utills {
     background:
-      radial-gradient(circle at 12% 0%, rgba(255, 255, 255, 0.18) 0 4rem, transparent 4.1rem),
-      linear-gradient(180deg, #ef6c1a 0 36%, $white 36% 100%);
+      radial-gradient(circle at 92% 10%, rgba(239, 108, 26, 0.16) 0 4.5rem, transparent 4.6rem),
+      #fffaf6;
+    border-color: rgba(239, 108, 26, 0.35);
 
     &::before {
       background: #ef6c1a;
     }
 
-    .project-card-copy {
-      padding-top: 7.2rem;
-    }
-
     h2 {
-      color: #1f1f1f;
+      color: #9b3f0d;
     }
 
     .project-status {
-      color: $white;
+      color: #d65f15;
+    }
+
+    .project-tags li {
+      background: rgba(239, 108, 26, 0.12);
+    }
+
+    .project-highlights li::before {
+      color: #d65f15;
     }
 
     button,
@@ -172,6 +199,10 @@
 
     .project-tags li {
       background: rgba(199, 70, 52, 0.12);
+    }
+
+    .project-highlights li::before {
+      color: #c74634;
     }
 
     button,

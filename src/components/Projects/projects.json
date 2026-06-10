@@ -1,13 +1,13 @@
 [
   {
     "title": "Projects",
-    "intro": "Selected product work and engineering projects across React, TypeScript, IAM, developer tools, and practical AI-assisted engineering.",
+    "intro": "Selected work across privacy-first developer tools, cloud identity systems, AT Protocol product development, and agent-assisted software delivery.",
     "records": [
       {
-        "title": "utills.dev - Private Browser-based Developer Utilities",
+        "title": "utills.dev — Private Browser Utilities",
         "theme": "utills",
-        "copy": "A live React/TypeScript developer tools app for JSON, JWT, Base64, regex, hashes, URL encoding, and character encoding workflows. Standard tools run locally in the browser, so sensitive payloads and tokens do not need to be uploaded.\n\nBuilt for fast, focused developer workflows with privacy-first browser-only utilities, JWT/security-adjacent tooling, and guides for developer education.\n\nTechnologies used: React, TypeScript, Vite, Tailwind CSS, Vitest, Playwright, GitHub Actions, AWS S3, AWS CloudFront.",
-        "summary": "Live privacy-first browser utilities for JSON, JWT, Base64, regex, hashes, URL encoding, and encoding workflows.",
+        "copy": "A live privacy-first developer tools app for formatting, decoding, validating, converting, and asking questions about everyday engineering data: JSON, YAML, XML, JWTs, Base64, URLs, hashes, regexes, and character encodings. The standard utilities run locally in the browser, so sensitive payloads and tokens can stay on the user's machine.\n\nThe app also includes tool-aware AI chat. JSON, JWT, Base64, YAML, XML, regex, hash, and encoding pages can pass the current working context into an embedded assistant. It defaults to Chrome's in-browser Prompt API / Gemini Nano when available, with bring-your-own-key fallback for OpenAI, Anthropic, or a custom OpenAI-compatible endpoint.\n\nBuilt as a production-quality utility suite: React 19, strict TypeScript, Vite SSR prerendering across 21 routes, Tailwind CSS v4, SEO/reference guides, GitHub Actions deployment to S3/CloudFront, 345 unit tests, and 181 Playwright E2E tests across five browsers.",
+        "summary": "Privacy-first browser utilities with contextual AI chat for JSON/YAML/XML, JWT, Base64, regex, hashes, URLs, and encoding workflows.",
         "media": {
           "alt": "utills.dev developer tools app",
           "title": "utills.dev",
@@ -25,19 +25,24 @@
             "href": ""
           }
         ],
-        "status": "Released",
+        "status": "Live product",
         "tags": [
-          "React",
+          "React 19",
           "TypeScript",
-          "Vite",
-          "Privacy-first devtools"
+          "Browser AI",
+          "BYOK"
+        ],
+        "highlights": [
+          "Keeps sensitive tokens and payloads local while supporting JSON/YAML/XML conversion, JWT verification, and Base64 URL-safe workflows.",
+          "Adds contextual AI chat using Chrome's in-browser Prompt API/Gemini Nano when available, plus BYOK OpenAI, Anthropic, and custom endpoint options.",
+          "Shipped with 345 unit tests, 181 Playwright E2E tests across five browsers, and GitHub Actions deployment to AWS S3/CloudFront."
         ]
       },
       {
         "title": "OCI IAM: Admin Surfaces, APIs, and Observability",
         "theme": "oracle",
-        "copy": "Professional work at Oracle Cloud Infrastructure across customer-facing identity and access management surfaces, Java REST APIs, OAuth/session workflows, SDK generation, authentication observability, and reliability improvements.\n\nWorked on React components and hooks for Identity Console experiences including Dynamic Groups, Policies, Reports, and Applications; metadata-driven reports UI generated from backend templates; Java REST endpoints for MySessions visibility and session workflows; authentication observability for a high-scale identity platform; canary refactors that reduced alert noise; and SDK generation/examples for enterprise developers.\n\nFocus areas: enterprise trust boundaries, admin workflows, customer-facing cloud UX, observability, and production reliability.",
-        "summary": "OCI IAM work covering admin UX, Java APIs, OAuth/session workflows, SDK tooling, and observability.",
+        "copy": "Professional engineering work at Oracle Cloud Infrastructure across identity administration, authentication, OAuth/session APIs, SDK generation, observability, and production reliability for enterprise cloud customers.\n\nBuilt customer-facing React console surfaces for Dynamic Groups, Policies, Reports, and Applications; designed a metadata-driven reports UI that reduced duplicated frontend work; implemented Java REST APIs for MySessions visibility and session-management workflows; improved authentication observability for a high-scale identity platform; refactored canary infrastructure to cut alert noise by 50%; and strengthened release/on-call practices that reduced regressions by 20%.\n\nAlso led cross-functional delivery of OCI Identity Domains SDK generation across Python, Java, and Go by rewriting Swagger generation for legacy endpoints, authoring architecture documents, aligning senior identity stakeholders, and creating examples that helped enterprise developers adopt the platform.",
+        "summary": "OCI identity engineering across admin UX, Java APIs, OAuth/session workflows, SDK generation, observability, and production reliability.",
         "media": {
           "alt": "OCI IAM project card",
           "title": "OCI IAM",
@@ -55,19 +60,24 @@
             "href": ""
           }
         ],
-        "status": "Professional work",
+        "status": "Professional experience",
         "tags": [
           "OCI IAM",
           "React",
           "Java APIs",
           "OAuth",
           "Observability"
+        ],
+        "highlights": [
+          "Built React console surfaces and metadata-driven IAM reports for Dynamic Groups, Policies, Reports, and Applications.",
+          "Implemented Java session-management APIs and authentication observability for high-scale identity workflows.",
+          "Cut canary alert noise by 50%, reduced regressions by 20%, automated multi-region deployment effort by 60%, and led SDK generation for Python, Java, and Go."
         ]
       },
       {
         "title": "Multi-Agent Development Workflow",
-        "copy": "A personal agentic coding system that turns product requirements into structured development workflows: PRD parsing, task decomposition, dependency graphs, role-specialized agents, validation gates, retry loops, and output scoring. The project is focused on the engineering layer around AI assistance: where autonomy helps, where validation belongs, and where human review remains essential.\n\nEmphasis: agent orchestration, acceptance criteria generation, graph/dependency modeling, validation gates, retry loops, output scoring, and trust boundaries.",
-        "summary": "Agentic coding workflow with decomposition, dependency graphs, validation gates, retry loops, and output scoring.",
+        "copy": "A practical agent-assisted development workflow for turning ambiguous software work into constrained, inspectable delivery loops. The system separates research, implementation, and review so AI assistance is scoped by evidence, acceptance criteria, validation, and human judgment.\n\nThe workflow uses role-specific agents for read-only scouting, vertical-slice implementation, and standards/spec review; dispatch tooling for isolated specialist runs; optional sequential chains; visible status dashboards; scoped tool access; retry handling; clean-worktree rules; and durable decision/handoff notes for context recovery.\n\nThe project is less about asking an LLM to write code and more about engineering the trust boundary around it: task decomposition, acceptance criteria, dependency modeling, validation gates, retry limits, output scoring, and review checkpoints.",
+        "summary": "Agent-assisted coding workflow with scout/builder/reviewer roles, dispatch tooling, validation gates, and review checkpoints.",
         "media": {
           "alt": "Abstract agent workflow card",
           "title": "Multi-Agent Workflow",
@@ -85,30 +95,35 @@
             "href": ""
           }
         ],
-        "status": "In progress",
+        "status": "Current experiment",
         "tags": [
           "AI-assisted engineering",
           "Agent orchestration",
-          "Validation gates",
-          "Developer tooling"
+          "Developer tooling",
+          "Validation gates"
+        ],
+        "highlights": [
+          "Defines a repeatable scout → builder → reviewer workflow with scoped tools and vertical-slice delivery rules.",
+          "Uses specialist dispatch, sequential pipelines, session isolation, and dashboard-style status visibility to keep work inspectable.",
+          "Combines validation gates, retry limits, output scoring, durable handoffs, and human review boundaries."
         ]
       },
       {
-        "title": "Sheervue - In-progress Product Build",
+        "title": "SheerVue - AT Protocol Social Client",
         "theme": "sheervue",
-        "status": "Live web app / unreleased",
-        "copy": "An early-stage web application included as an in-progress product build rather than a polished launch. The web version is available, but the product is still unreleased, so the portfolio should frame it as current full-stack product work without overselling maturity.\n\nUse this as a lower-priority featured item after released work and enterprise IAM experience: useful signal for current product development, UI iteration, and end-to-end ownership, but not the headline until the product is ready for broader launch.",
-        "summary": "In-progress web product build; useful as current full-stack product signal without presenting it as a launched app.",
+        "status": "Live app",
+        "copy": "A third-party AT Protocol social client built with React Native, Expo, and TypeScript. SheerVue focuses on social reading and control: transparent moderation surfaces, developer-friendly post rendering, quieter feed controls, and AT Protocol features that extend beyond a single default client experience.\n\nBuilt across iOS, Android, and Web with production React Native patterns: TanStack Query server state, persisted preferences, cross-platform file resolution, custom feed APIs, typed AT Protocol lexicon integration, OAuth-first third-party sign-in boundaries, native module integration, and a full product rebrand.\n\nKey features include soft-block transparency and a Blocked Me feed, fenced code blocks and inline code rendering, per-account repost hiding, repost deduplication, minimalist reading-focused feed mode, thread collapsing/unroll concepts, cross-app AT Protocol badges, and account-management guardrails appropriate for a third-party OAuth client.",
+        "summary": "Third-party AT Protocol client with soft-block transparency, code-aware posts, repost controls, OAuth boundaries, and reading-focused feeds.",
         "media": {
           "alt": "Sheervue in-progress product card",
           "title": "Sheervue",
           "href": ""
         },
         "tags": [
-          "Full-stack product",
-          "Web app",
-          "In progress",
-          "Product iteration"
+          "React Native",
+          "Expo",
+          "AT Protocol",
+          "OAuth"
         ],
         "links": [
           {
@@ -121,6 +136,11 @@
             "title": "",
             "href": ""
           }
+        ],
+        "highlights": [
+          "Builds differentiated AT Protocol client features: soft-block transparency, Blocked Me feed, code blocks, per-account repost hiding, and repost deduplication.",
+          "Delivers cross-platform React Native/Expo architecture across iOS, Android, and Web with TanStack Query, persisted preferences, and typed AT Protocol APIs.",
+          "Defines third-party-client boundaries around OAuth sign-in, account-management surfaces, moderation visibility, and cross-app AT Protocol identity."
         ]
       }
     ]
@@ -153,12 +173,14 @@
         ],
         "status": "Earlier project",
         "tags": [
-          "React / JavaScript"
+          "JavaScript",
+          "CSS",
+          "Local storage"
         ]
       },
       {
         "title": "One-Bar",
-        "copy": "One-Bar is an SMS-based application that lets users in areas with limited mobile coverage access vital information such as weather forecasts, hospital locations, restaurants, local trails, and news. A Node.js server receives requests via Twilio, calls third-party APIs, parses data, and relays information back to the user.\n\nTechnologies used: Node.js, Express, Superagent, EJS, PostgreSQL, Twilio, Google Maps, Yelp, Darksky, Hiking Project, News API.",
+        "copy": "One-Bar is an SMS-based application that lets users in areas with limited mobile coverage access vital information such as weather forecasts, hospital locations, restaurants, local trails, and news. A Node.js server receives requests via Twilio, calls third-party APIs, parses data, and relays information back to the user.\n\nTechnologies used: Node.js, Express, Superagent, EJS, PostgreSQL, Twilio, Google Maps, Yelp, Dark Sky, Hiking Project, News API.",
         "summary": "Bootcamp-era SMS information service for low-connectivity travel scenarios.",
         "media": {
           "alt": "One-Bar logo",
@@ -179,7 +201,9 @@
         ],
         "status": "Earlier project",
         "tags": [
-          "React / JavaScript"
+          "Node.js",
+          "Express",
+          "Twilio"
         ]
       },
       {
@@ -194,7 +218,7 @@
         "links": [
           {
             "type": "primary",
-            "title": "NPM",
+            "title": "npm",
             "href": "https://www.npmjs.com/package/cf-quick-start"
           },
           {
@@ -205,7 +229,9 @@
         ],
         "status": "Earlier project",
         "tags": [
-          "React / JavaScript"
+          "Node.js",
+          "npm CLI",
+          "Jest"
         ]
       },
       {
@@ -231,7 +257,9 @@
         ],
         "status": "Earlier project",
         "tags": [
-          "React / JavaScript"
+          "React Native",
+          "Expo",
+          "Redux"
         ]
       }
     ]

@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "sass": "^1.94.0",
     "react": "^19.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^19.2.0",
     "react-modal": "^3.16.3",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "sass": "^1.94.0"
   },
   "scripts": {
     "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",

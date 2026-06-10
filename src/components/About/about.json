@@ -5,13 +5,13 @@
       "paragraph": "Senior Software Engineer with 6+ years at Oracle Cloud Infrastructure building identity, authentication, developer tooling, and customer-facing cloud product surfaces. I work across React, TypeScript, Java APIs, OAuth, observability, and production reliability."
     },
     {
-      "paragraph": "At OCI, I worked across Identity Console features, OAuth and session-management APIs, SDK workflows, and authentication observability. That mix gave me a strong appreciation for enterprise trust boundaries: permissions, auditability, reliability, and operational discipline."
+      "paragraph": "At OCI, I worked on Identity Console features, OAuth and session-management APIs, SDK workflows, and authentication observability. That experience shaped how I think about enterprise trust boundaries: permissions, auditability, reliability, and operational discipline."
     },
     {
-      "paragraph": "I started in technical program management before moving fully into software engineering, which shaped how I work: I care about clear requirements, tradeoffs, delivery constraints, and whether a system actually helps the people using it."
+      "paragraph": "I started in technical program management before moving fully into software engineering, which still shapes how I work: I care about clear requirements, tradeoffs, delivery constraints, and whether a system actually helps the people using it."
     },
     {
-      "paragraph": "Recently I have been building and studying agentic development workflows. The interesting part is not just getting an AI model to produce code; it is designing the surrounding system: decomposition, acceptance criteria, tool access, validation gates, retry limits, output scoring, and human review."
+      "paragraph": "Recently I’ve been building agent-assisted development workflows around the code, not just the model: decomposition, acceptance criteria, tool access, validation gates, retry limits, output scoring, and human review."
     }
   ]
 }

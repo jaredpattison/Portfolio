@@ -40,7 +40,12 @@ const ProjectsCard = ({ projects, isArchive }) => {
           {projects.status && <span className="project-status">{projects.status}</span>}
           <h2>{projects.title}</h2>
           <p>{projects.summary || projects.copy}</p>
-          {projects.tags && (
+          {projects.highlights && (
+            <ul className="project-highlights" aria-label={`${projects.title} highlights`}>
+              {projects.highlights.map(highlight => <li key={highlight}>{highlight}</li>)}
+            </ul>
+          )}
+          {projects.tags && !projects.highlights && (
             <ul className="project-tags" aria-label={`${projects.title} tags`}>
               {projects.tags.slice(0, 4).map(tag => <li key={tag}>{tag}</li>)}
             </ul>
@@ -82,6 +87,12 @@ const ProjectsCard = ({ projects, isArchive }) => {
           {projects.status && <span className="project-status">{projects.status}</span>}
           <h1>{projects.title}</h1>
           {paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
+
+          {projects.highlights && (
+            <ul className="project-highlights" aria-label={`${projects.title} highlights`}>
+              {projects.highlights.map(highlight => <li key={highlight}>{highlight}</li>)}
+            </ul>
+          )}
 
           {projects.tags && (
             <ul className="project-tags" aria-label={`${projects.title} tags`}>
