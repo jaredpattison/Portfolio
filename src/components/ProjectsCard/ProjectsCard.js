@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import github from '../../assets/github.svg';
-import world from '../../assets/www.png';
 
-// Import all project images
 import packingPlanner from '../../assets/packing-planner.png';
 import oneBar from '../../assets/one-bar.png';
 import cfQuickStart from '../../assets/cf-quick-start.png';
 import buzzcard from '../../assets/buzzcard.png';
 
-// Image map for dynamic lookup
 const imageMap = {
   'packing-planner.png': packingPlanner,
   'one-bar.png': oneBar,
@@ -17,69 +13,91 @@ const imageMap = {
   'buzzcard.png': buzzcard,
 };
 
-const ProjectsCard = ({ projects }) => {
+const linkLabels = {
+  primary: 'Open',
+  secondary: 'Source',
+};
+
+const ProjectsCard = ({ projects, isArchive }) => {
   const [showModal, setShowModal] = useState(false);
+  const imgUrl = imageMap[projects.media.title] || projects.media.href;
+  const activeLinks = projects.links.filter(link => link.href);
+  const primaryCardLink = projects.links.find(link => link.type === 'primary' && link.href);
+  const paragraphs = projects.copy.split('\n\n');
+  const showCardImage = isArchive && imgUrl;
 
-  const handleOpenModal = () => {
-    setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
-
-  const imgUrl = imageMap[projects.media.title] || projects.media.href || packingPlanner;
+  const themeClass = projects.theme ? ` theme-${projects.theme}` : '';
 
   return (
     <>
-      <div className="projects-card">
-        <figure>
-          <img
-            onClick={handleOpenModal}
-            src={imgUrl}
-            alt={projects.media.alt}
-            title={projects.media.title}
-          />
-        </figure>
-      </div>
-
-      <Modal 
-        isOpen={showModal}
-        contentLabel={`Project details: ${projects.title}`}
-        className="Modal"
-        overlayClassName="Overlay"
-        closeTimeoutMS={1000}
-        onRequestClose={handleCloseModal}
-        shouldCloseOnOverlayClick={true}
-      >
-        <div id="image-social">
-          <div id="image-container">
-            <img
-              src={imgUrl}
-              alt={projects.media.alt}
-              title={projects.media.title}
-            />
-          </div>
-
-          <div id="social-icons">
-            <button className="social" onClick={handleCloseModal} aria-label="Close modal">X</button>
-            {projects.links[1].href && (
-              <a target="_blank" rel="noopener noreferrer" href={projects.links[1].href}>
-                <img alt="View project on GitHub" className="social" src={github}/>
-              </a>
-            )}
-            {projects.links[0].href && (
-              <a target="_blank" rel="noopener noreferrer" href={projects.links[0].href}>
-                <img alt="View project website" className="social" src={world} />
+      <article className={`projects-card${isArchive ? ' archive-card' : ' featured-card'}${themeClass}`} onClick={() => setShowModal(true)}>
+        {showCardImage && (
+          <figure>
+            <img src={imgUrl} alt={projects.media.alt} title={projects.media.title} />
+          </figure>
+        )}
+        <div className="project-card-copy">
+          {projects.status && <span className="project-status">{projects.status}</span>}
+          <h2>{projects.title}</h2>
+          <p>{projects.summary || projects.copy}</p>
+          {projects.tags && (
+            <ul className="project-tags" aria-label={`${projects.title} tags`}>
+              {projects.tags.slice(0, 4).map(tag => <li key={tag}>{tag}</li>)}
+            </ul>
+          )}
+          <div className="card-actions">
+            <button type="button">Read details</button>
+            {primaryCardLink && (
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={primaryCardLink.href}
+                onClick={event => event.stopPropagation()}
+              >
+                {primaryCardLink.title || 'Open'}
               </a>
             )}
           </div>
         </div>
+      </article>
 
-        <div id="description">
-          <p>
-            {projects.copy}
-          </p>
+      <Modal
+        isOpen={showModal}
+        contentLabel={`Project details: ${projects.title}`}
+        className={`Modal project-modal${imgUrl ? '' : ' no-media'}`}
+        overlayClassName="Overlay"
+        closeTimeoutMS={300}
+        onRequestClose={() => setShowModal(false)}
+        shouldCloseOnOverlayClick={true}
+      >
+        <button className="modal-close" onClick={() => setShowModal(false)} aria-label="Close modal">×</button>
+
+        {imgUrl && (
+          <div className="modal-media">
+            <img src={imgUrl} alt={projects.media.alt} title={projects.media.title} />
+          </div>
+        )}
+
+        <div className="modal-body">
+          {projects.status && <span className="project-status">{projects.status}</span>}
+          <h1>{projects.title}</h1>
+          {paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
+
+          {projects.tags && (
+            <ul className="project-tags" aria-label={`${projects.title} tags`}>
+              {projects.tags.map(tag => <li key={tag}>{tag}</li>)}
+            </ul>
+          )}
+
+          {activeLinks.length > 0 && (
+            <div className="modal-actions">
+              {activeLinks.map(link => (
+                <a target="_blank" rel="noopener noreferrer" href={link.href} key={link.href}>
+                  {link.title || linkLabels[link.type] || 'Open'}
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       </Modal>
     </>

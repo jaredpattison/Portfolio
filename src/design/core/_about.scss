@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem 0 0 0;
+  padding: 3rem 1rem;
 
   .about-description {
     padding: 1.5rem;
@@ -12,12 +12,13 @@
 
   img {
     position: relative;
-    height: 30vw;
-    width: 30vw;
+    height: 16rem;
+    width: 16rem;
     z-index: 1;
     object-fit: cover;
-    object-position: 100% 0;
-    border-radius: 50%;
+    object-position: 50% 20%;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.16);
   }
 
   p {
@@ -26,7 +27,7 @@
   }
 
   h1 {
-    font: bold 2.5rem bold;
+    font: bold clamp(2rem, 4vw, 2.8rem) $raleway;
   }
 
   span {
@@ -47,17 +48,17 @@
   .about-container {
     flex-direction: row;
     align-items: flex-start;
-    padding: 0 3vw;
+    padding: 4rem 5vw;
 
     img {
-      width: 24rem;
-      height: auto;
-      padding: 4rem 0 0 2rem;
-      border-radius: 0px;
+      width: 18rem;
+      height: 24rem;
+      padding: 0;
+      border-radius: 0.4rem;
     }
 
     .about-description {
-      padding: 3rem;
+      padding: 0 0 0 3rem;
     }
     
     p {

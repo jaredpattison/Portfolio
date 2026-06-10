@@ -1,20 +1,120 @@
 [
   {
-    "title": "Jared's Projects",
+    "title": "Projects",
+    "intro": "Selected product work and engineering projects across React, TypeScript, IAM, developer tools, and practical AI-assisted engineering.",
     "records": [
       {
-        "title": "Developer Tools",
-        "copy": "A web application for encoding, decoding, and formatting various data formats with real-time updates. Features include Base64 encoder/decoder with UTF-8 support, JSON formatter/minifier with YAML and XML conversion, and JWT decoder/encoder with signature verification. All tools work in real-time with no data stored on servers.\n\nBuilt with Cursor using AI coding agents for rapid development and iteration. Deployed via GitHub Actions CI/CD pipeline to AWS S3 with CloudFront CDN for global content delivery.\n\nTechnologies used: React, TypeScript, Vite, Tailwind CSS, Vitest, Playwright, GitHub Actions, AWS S3, AWS CloudFront",
+        "title": "utills.dev - Private Browser-based Developer Utilities",
+        "theme": "utills",
+        "copy": "A live React/TypeScript developer tools app for JSON, JWT, Base64, regex, hashes, URL encoding, and character encoding workflows. Standard tools run locally in the browser, so sensitive payloads and tokens do not need to be uploaded.\n\nBuilt for fast, focused developer workflows with privacy-first browser-only utilities, JWT/security-adjacent tooling, and guides for developer education.\n\nTechnologies used: React, TypeScript, Vite, Tailwind CSS, Vitest, Playwright, GitHub Actions, AWS S3, AWS CloudFront.",
+        "summary": "Live privacy-first browser utilities for JSON, JWT, Base64, regex, hashes, URL encoding, and encoding workflows.",
         "media": {
-          "alt": "Developer Tools - Base64, JSON, and JWT utilities",
-          "title": "og-image.png",
-          "href": "https://base-64.online/og-image.png"
+          "alt": "utills.dev developer tools app",
+          "title": "utills.dev",
+          "href": "https://utills.dev/og-image.png"
         },
         "links": [
           {
             "type": "primary",
-            "title": "Live Site",
-            "href": "https://base-64.online"
+            "title": "Open app",
+            "href": "https://utills.dev/"
+          },
+          {
+            "type": "secondary",
+            "title": "",
+            "href": ""
+          }
+        ],
+        "status": "Released",
+        "tags": [
+          "React",
+          "TypeScript",
+          "Vite",
+          "Privacy-first devtools"
+        ]
+      },
+      {
+        "title": "OCI IAM: Admin Surfaces, APIs, and Observability",
+        "theme": "oracle",
+        "copy": "Professional work at Oracle Cloud Infrastructure across customer-facing identity and access management surfaces, Java REST APIs, OAuth/session workflows, SDK generation, authentication observability, and reliability improvements.\n\nWorked on React components and hooks for Identity Console experiences including Dynamic Groups, Policies, Reports, and Applications; metadata-driven reports UI generated from backend templates; Java REST endpoints for MySessions visibility and session workflows; authentication observability for a high-scale identity platform; canary refactors that reduced alert noise; and SDK generation/examples for enterprise developers.\n\nFocus areas: enterprise trust boundaries, admin workflows, customer-facing cloud UX, observability, and production reliability.",
+        "summary": "OCI IAM work covering admin UX, Java APIs, OAuth/session workflows, SDK tooling, and observability.",
+        "media": {
+          "alt": "OCI IAM project card",
+          "title": "OCI IAM",
+          "href": ""
+        },
+        "links": [
+          {
+            "type": "primary",
+            "title": "Details coming soon",
+            "href": ""
+          },
+          {
+            "type": "secondary",
+            "title": "",
+            "href": ""
+          }
+        ],
+        "status": "Professional work",
+        "tags": [
+          "OCI IAM",
+          "React",
+          "Java APIs",
+          "OAuth",
+          "Observability"
+        ]
+      },
+      {
+        "title": "Multi-Agent Development Workflow",
+        "copy": "A personal agentic coding system that turns product requirements into structured development workflows: PRD parsing, task decomposition, dependency graphs, role-specialized agents, validation gates, retry loops, and output scoring. The project is focused on the engineering layer around AI assistance: where autonomy helps, where validation belongs, and where human review remains essential.\n\nEmphasis: agent orchestration, acceptance criteria generation, graph/dependency modeling, validation gates, retry loops, output scoring, and trust boundaries.",
+        "summary": "Agentic coding workflow with decomposition, dependency graphs, validation gates, retry loops, and output scoring.",
+        "media": {
+          "alt": "Abstract agent workflow card",
+          "title": "Multi-Agent Workflow",
+          "href": ""
+        },
+        "links": [
+          {
+            "type": "primary",
+            "title": "Details coming soon",
+            "href": ""
+          },
+          {
+            "type": "secondary",
+            "title": "",
+            "href": ""
+          }
+        ],
+        "status": "In progress",
+        "tags": [
+          "AI-assisted engineering",
+          "Agent orchestration",
+          "Validation gates",
+          "Developer tooling"
+        ]
+      },
+      {
+        "title": "Sheervue - In-progress Product Build",
+        "theme": "sheervue",
+        "status": "Live web app / unreleased",
+        "copy": "An early-stage web application included as an in-progress product build rather than a polished launch. The web version is available, but the product is still unreleased, so the portfolio should frame it as current full-stack product work without overselling maturity.\n\nUse this as a lower-priority featured item after released work and enterprise IAM experience: useful signal for current product development, UI iteration, and end-to-end ownership, but not the headline until the product is ready for broader launch.",
+        "summary": "In-progress web product build; useful as current full-stack product signal without presenting it as a launched app.",
+        "media": {
+          "alt": "Sheervue in-progress product card",
+          "title": "Sheervue",
+          "href": ""
+        },
+        "tags": [
+          "Full-stack product",
+          "Web app",
+          "In progress",
+          "Product iteration"
+        ],
+        "links": [
+          {
+            "type": "primary",
+            "title": "Open app",
+            "href": "https://sheervue.app/"
           },
           {
             "type": "secondary",
@@ -22,14 +122,22 @@
             "href": ""
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "title": "Earlier Projects",
+    "intro": "Earlier React and JavaScript projects from my transition into software engineering.",
+    "archive": true,
+    "records": [
       {
         "title": "Packing Planner",
-        "copy": "Packing Planner provides a pre-populated, customizable, packing checklist based the climate the user will be travelling to and the activities he expects to participate in. The final checklist is saved to the browsers local storage and is retrieved when opened.\nTechnologies used: JavaScript, CSS, JSON, arrays, local storage",
+        "copy": "Packing Planner provides a pre-populated, customizable packing checklist based on the climate the user will be travelling to and the activities they expect to participate in. The final checklist is saved to browser local storage.\n\nTechnologies used: JavaScript, CSS, JSON, arrays, local storage.",
+        "summary": "Bootcamp-era packing checklist app using JavaScript and local storage.",
         "media": {
-          "alt": "This is a picture of packing planner logo",
+          "alt": "Packing Planner logo",
           "title": "packing-planner.png",
-          "href": "https://github.com/andrewquamme/one-bar/blob/master/public/assets/logo-copy.png"
+          "href": ""
         },
         "links": [
           {
@@ -38,19 +146,24 @@
             "href": ""
           },
           {
-            "type": "secodary",
+            "type": "secondary",
             "title": "GitHub",
             "href": "https://github.com/niesssiobhan/packing-planner"
           }
+        ],
+        "status": "Earlier project",
+        "tags": [
+          "React / JavaScript"
         ]
       },
       {
         "title": "One-Bar",
-        "copy": "One-Bar is a SMS-based application that allows users in areas with limited mobile coverage to access vital information such as weather forecasts, hospital locations, restaurants, local trails, etc. Utilizing a Node.js server the application receives requests for information via text message (Twilio), makes API calls, parses data, and relays the information back to the user.\nTechnologies used: Node.js, Express, Superagent, EJS, PostgreSQL\nThird-Pary APIs: Google Maps, Yelp, Darksky, Hiking Project, News API",
+        "copy": "One-Bar is an SMS-based application that lets users in areas with limited mobile coverage access vital information such as weather forecasts, hospital locations, restaurants, local trails, and news. A Node.js server receives requests via Twilio, calls third-party APIs, parses data, and relays information back to the user.\n\nTechnologies used: Node.js, Express, Superagent, EJS, PostgreSQL, Twilio, Google Maps, Yelp, Darksky, Hiking Project, News API.",
+        "summary": "Bootcamp-era SMS information service for low-connectivity travel scenarios.",
         "media": {
-          "alt": "This is a picture of One-Bar logo",
+          "alt": "One-Bar logo",
           "title": "one-bar.png",
-          "href": "https://placehold.it/200x100"
+          "href": ""
         },
         "links": [
           {
@@ -59,40 +172,50 @@
             "href": ""
           },
           {
-            "type": "secodary",
+            "type": "secondary",
             "title": "GitHub",
             "href": "https://github.com/andrewquamme/one-bar"
           }
+        ],
+        "status": "Earlier project",
+        "tags": [
+          "React / JavaScript"
         ]
       },
       {
         "title": "CF Quick-Start",
-        "copy": "cf-quick-start is a globally installed NPM package that generates starter code for one of four functioning Node.js projects (api-server, express server, React app, or socket server as well as tests and configuration files).\nTechnologies used: Node.js, NPM packages (inquirer, fs, fs-extra), Jest",
+        "copy": "cf-quick-start is a globally installed NPM package that generates starter code for Node.js project types including API servers, Express servers, React apps, and socket servers with tests and configuration files.\n\nTechnologies used: Node.js, NPM packages, Inquirer, fs, fs-extra, Jest.",
+        "summary": "Bootcamp-era npm package for generating Node.js starter projects.",
         "media": {
-          "alt": "This is a picture of CF Quick-Start logo",
+          "alt": "CF Quick-Start logo",
           "title": "cf-quick-start.png",
-          "href": "https://placehold.it/200x100"
+          "href": ""
         },
         "links": [
           {
             "type": "primary",
-            "title": "Website",
+            "title": "NPM",
             "href": "https://www.npmjs.com/package/cf-quick-start"
           },
           {
-            "type": "secodary",
+            "type": "secondary",
             "title": "GitHub",
             "href": "https://github.com/TannerSeramur/cf-quick-start"
           }
+        ],
+        "status": "Earlier project",
+        "tags": [
+          "React / JavaScript"
         ]
       },
       {
-        "title": "BUZZ CARD",
-        "copy": "BuzzCard is a mobile application that allows users to exchange contact information, such as social media accounts, by scanning QR codes (two-dimensional barcodes). The application enables users to create a profile, choose what information to share, and a QR code is dynamically generated that can then be scanned by another user\nTechnologies used: React Native, Expo, Redux, Babel",
+        "title": "BuzzCard",
+        "copy": "BuzzCard is a mobile application that allows users to exchange contact information by scanning QR codes. Users create a profile, choose what to share, and a QR code is dynamically generated for another user to scan.\n\nTechnologies used: React Native, Expo, Redux, Babel.",
+        "summary": "Bootcamp-era React Native QR contact-sharing application.",
         "media": {
-          "alt": "This is a picture of BUZZ CARD logo",
+          "alt": "BuzzCard logo",
           "title": "buzzcard.png",
-          "href": "https://placehold.it/200x100"
+          "href": ""
         },
         "links": [
           {
@@ -101,13 +224,16 @@
             "href": ""
           },
           {
-            "type": "secodary",
+            "type": "secondary",
             "title": "GitHub",
             "href": "https://github.com/401-final-project/front-end"
           }
+        ],
+        "status": "Earlier project",
+        "tags": [
+          "React / JavaScript"
         ]
       }
     ]
   }
 ]
-      

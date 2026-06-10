@@ -1,100 +1,173 @@
-.Modal {
+.Overlay {
   position: fixed;
-  top: $header-height;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background: rgba(0, 0, 0, 0.68);
+  z-index: 2;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.Modal {
+  background-color: $white;
+  bottom: 1rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
   display: flex;
   flex-direction: column;
-  background-color: $white;
-  z-index: 2;
-  
-  #image-social {
+  left: 1rem;
+  outline: none;
+  overflow: hidden;
+  position: fixed;
+  right: 1rem;
+  top: calc(#{$header-height} + 1rem);
+  z-index: 3;
+
+  .modal-close {
+    align-items: center;
+    background: $lightblack;
+    border: 0;
+    color: $white;
+    cursor: pointer;
     display: flex;
-    justify-content: space-between;
+    font: 2rem/1 $raleway;
+    height: 2.6rem;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.6rem;
+    z-index: 4;
+
+    &:hover {
+      background: $bleed;
+    }
   }
 
-  #image-container {
-    width: 80%;
-    padding: 0 0 0 1rem;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    max-height: 14rem;
-
-  }
-
-  #social-icons {
-    max-width: 3rem;
-    margin: 0 1.8rem 0 0;
-  }
-
-  #description {
-    padding: 1rem;
+  .modal-media {
+    background: $lightblack;
+    flex: 0 0 13rem;
     overflow: hidden;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
   }
 
-  button {
-    color: $darkgrey;
-    font: 3rem arial, sans-serif;
+  .modal-body {
+    font-family: $raleway;
+    overflow: auto;
+    padding: 1.4rem;
+
+    h1 {
+      color: $lightblack;
+      font: bold 1.6rem/1.2 $raleway;
+      margin: 0.35rem 2.2rem 1rem 0;
+    }
+
+    p {
+      font: 1rem/1.55rem $raleway;
+      margin-bottom: 0.9rem;
+      white-space: pre-line;
+    }
   }
 
-  .social {
-    height: 3rem;
-    width: 3rem;
-    margin: .8rem;
+  .project-status {
+    color: $bleed;
+    display: inline-block;
+    font: bold 0.75rem $raleway;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
-  p {
-    font: bold 1rem/1.2rem $raleway;
-    overflow: hidden;
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+
+    li {
+      background: rgba(7, 136, 163, 0.12);
+      border: 1px solid rgba(7, 136, 163, 0.25);
+      color: $lightblack;
+      font: bold 0.75rem $raleway;
+      padding: 0.35rem 0.5rem;
+    }
   }
 
+  .modal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 1.4rem;
+
+    a {
+      background: $accentColor;
+      color: $white;
+      font: bold 0.8rem $raleway;
+      letter-spacing: 0.08em;
+      padding: 0.75rem 0.9rem;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover {
+        background: $bleed;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: $M) {
-
   .Modal {
-    position: absolute;
-    top: 35%;
+    bottom: auto;
     left: 50%;
-    transform: translate(-50%, -35%) !important;
-    min-width: 22rem;
-    max-width: 30rem;
-    min-height: 35rem;
+    max-height: 82vh;
+    max-width: 62rem;
+    right: auto;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    width: calc(100vw - 4rem);
 
-    #image-container {
-      padding: 1rem 2rem;
+    &.project-modal {
+      display: grid;
+      grid-template-columns: minmax(18rem, 0.9fr) minmax(22rem, 1.2fr);
     }
 
-  }
+    &.project-modal.no-media {
+      display: block;
+      max-width: 44rem;
+    }
 
-  .Overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.5), 
-      rgba(0, 0, 0, 0.5)
-    );
-    z-index: 2;
-  }
-  
-  .ReactModal__Overlay {
-    opacity: 0;
-    transition: opacity 1000ms ease-in-out;
-  }
+    .modal-media {
+      flex: none;
+      min-height: 100%;
+    }
 
-  .ReactModal__Overlay--after-open{
-    opacity: 1;
+    .modal-body {
+      max-height: 82vh;
+      padding: 2rem;
+    }
   }
+}
 
-  .ReactModal__Overlay--before-close{
-    opacity: 0;
+@media screen and (min-width: $L) {
+  .Modal {
+    max-width: 70rem;
   }
-
 }

@@ -17,6 +17,14 @@
       color: $accentColor;
     }
 
+    &:nth-child(2) span {
+      color: $white;
+    }
+
+    &:nth-child(3) span {
+      color: $bleed;
+    }
+
   }
 
 }

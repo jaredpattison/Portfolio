@@ -1,21 +1,17 @@
-
-  {
-    "title": "JARED",
-    "content": [
-      {
-        "paragraph": "I am a Full-Stack JavaScript Software Developer based in Seattle, Washington."
-      },
-      {
-        "paragraph": "With experience in the Agriculture and Oil & Gas industries I am passionate about utilizing technology to satisfy business needs and I believe that my diverse background affords me a unique end-user perspective of technology’s possible applications. A modern software developer is part Business Analyst and part Architect, a good ear and the right questions can help realize a unique solution to an ambiguous problem."
-      },
-      {
-        "paragraph": "After entering the IT industry as a Technical Program Manager, leveraging my Project Management expertise, I came to appreciate the intricacies of planning for and tracking complex IT projects. I enjoyed deep-diving into agile software development methodologies and came to understand how they are a response to the inherent risk due to the complexities of software development. Continuous feedback and re-prioritization of features are necessary to course correct in the earliest stage of development possible."
-      },
-      {
-        "paragraph": "My role as a Technical Program Manager allowed me to work directly with developers and gain more technical expertise myself. I enjoyed getting hands-on and deep-diving into the technologies we were using and was inspired to start developing on my own."
-      },
-      {
-        "paragraph": "My passion for technology led me to pursue a career in software development attending a fulltime coding bootcamp with Code Fellow, culminating with Code 401: Advanced Software Development in Full-Stack JavaScript. I enjoy the problem-solving aspect of software development, especially utilizing architecture with an eye for reusability and maintainability."
-      }
-    ]
-  }
+{
+  "title": "JARED",
+  "content": [
+    {
+      "paragraph": "Senior Software Engineer with 6+ years at Oracle Cloud Infrastructure building identity, authentication, developer tooling, and customer-facing cloud product surfaces. I work across React, TypeScript, Java APIs, OAuth, observability, and production reliability."
+    },
+    {
+      "paragraph": "At OCI, I worked across Identity Console features, OAuth and session-management APIs, SDK workflows, and authentication observability. That mix gave me a strong appreciation for enterprise trust boundaries: permissions, auditability, reliability, and operational discipline."
+    },
+    {
+      "paragraph": "I started in technical program management before moving fully into software engineering, which shaped how I work: I care about clear requirements, tradeoffs, delivery constraints, and whether a system actually helps the people using it."
+    },
+    {
+      "paragraph": "Recently I have been building and studying agentic development workflows. The interesting part is not just getting an AI model to produce code; it is designing the surrounding system: decomposition, acceptance criteria, tool access, validation gates, retry limits, output scoring, and human review."
+    }
+  ]
+}

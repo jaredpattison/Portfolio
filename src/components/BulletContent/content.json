@@ -1,14 +1,14 @@
 [
   {
-    "title": "LEARNER",
-    "copy": ". I AM ALWAYS CURIOUS, RELYING ON MY EXPERIENCE AND ACTIVELY ENGAGING OTHERS IN ORDER TO PROCESS AND CONTEXTUALIZE IDEAS AND CONCEPTS."
+    "title": "IDENTITY + TRUST",
+    "copy": " systems shaped by permissions, OAuth/session workflows, enterprise admin needs, auditability, and production reliability."
   },
   {
-    "title": "PROBLEM SOLVER",
-    "copy": ". I AM PRO-ACTIVE, SEEKING ELEGANT, LONG-TERM SOLUTIONS FOR UNIQUE PROBLEMS. I VALUE SIMPLICITY AND MAINTAIN FOCUS ON THE UNDERLYING REASONS FOR SOLVING THE PROBLEM."
+    "title": "DEVELOPER EXPERIENCE",
+    "copy": " across React product surfaces, Java APIs, SDK generation, examples, observability, and tools that help developers move with confidence."
   },
   {
-    "title": "LEADER",
-    "copy": ". I BELIEVE THAT EVERYONE HAS SOMETHING VALUABLE TO CONTRIBUTE AND GREAT LEADERS COMBINE WISDOM WITH INTELLIGENT COMMUNICATION TO INFLUENCE INDIVIDUALS AND DRIVE CHANGE."
+    "title": "AGENTIC ENGINEERING",
+    "copy": " practical AI-assisted workflows with task decomposition, validation gates, retry limits, output scoring, and human review boundaries."
   }
 ]

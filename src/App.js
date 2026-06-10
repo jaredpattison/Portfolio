@@ -16,12 +16,12 @@ const App = () => {
     <>
       <HeaderNav />
       <main>
-        <Intro name="JARED PATTISON" description={['FULL-STACK', 'JAVASCRIPT', 'DEVELOPER']}/>
+        <Intro />
         <BulletContent />
         <Parallax bg={imageOne} tag="Projects" />
         <Projects />
-        <Parallax bg={imageTwo} tag="About Me" />
-        <About name="JARED"/>
+        <Parallax bg={imageTwo} tag="About" />
+        <About />
       </main>
       <Footer>
         <div>&copy; {new Date().getFullYear()} JP</div>
