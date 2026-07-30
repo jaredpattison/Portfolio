@@ -8,7 +8,7 @@ Personal portfolio website showcasing projects and skills.
 ## Getting Started
 
 ### Prerequisites
-* Node.js (v14 or higher)
+* Node.js 22.x (see `.nvmrc`)
 * npm or yarn
 
 ### Installation
@@ -51,6 +51,10 @@ npm install
 * `react-dom` - React DOM library (v19.2.0)
 * `react-modal` - Accessible modal component
 * `react-scripts` - Create React App scripts
+
+## Deployment
+
+Cloudflare Pages deployment settings and cutover notes are documented in [`docs/cloudflare-pages.md`](docs/cloudflare-pages.md).
 
 ## Technologies Used
 
